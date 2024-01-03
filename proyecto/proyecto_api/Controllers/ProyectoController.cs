@@ -14,13 +14,11 @@ namespace proyecto_api.Controllers
     {
         private readonly ILogger<ProyectoController> _logger;
         private readonly ApplicationDbContext _db;
-        protected APIResponse _apiResponse;
 
         public ProyectoController(ILogger<ProyectoController> logger, ApplicationDbContext db)
         {
             _logger = logger;
             _db = db;
-            _response = new();
         }
 
         [HttpGet]
